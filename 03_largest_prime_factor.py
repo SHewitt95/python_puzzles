@@ -1,12 +1,15 @@
+'''
+Puzzle: What is the largest prime factor of the number 600851475143 ?
+'''
 divisor = 2
 my_number = 600851475143
 
-'''
-The function isprime() was found at this website:
-https://www.daniweb.com/software-development/python/code/216880/check-if-a-number-is-a-prime-number-python
-'''
-
 def isprime(n):
+    '''
+    The function isprime() was found at this website:
+    https://www.daniweb.com/software-development/python/code/216880/check-if-a-number-is-a-prime-number-python
+    '''
+
     '''check if integer n is a prime'''
     # make sure n is a positive integer
     n = abs(int(n))
@@ -27,8 +30,8 @@ def isprime(n):
     return True
 
 while (divisor <= my_number):
-    if (my_number % divisor == 0):
-        if (isprime(divisor)):
+    if (my_number % divisor == 0): # If my_number is evenly disible by divisor...
+        if (isprime(divisor)): # If divisor is a prime number...
             print(divisor)
     divisor += 1
 
